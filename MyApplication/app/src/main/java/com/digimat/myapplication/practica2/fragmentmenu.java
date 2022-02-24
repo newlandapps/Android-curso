@@ -62,6 +62,6 @@ public class fragmentmenu extends Fragment implements View.OnClickListener{
         manager = getActivity().getSupportFragmentManager();
         transaction=manager.beginTransaction();
         fragment fragmentazul=new fragment();
-        transaction.add(R.id.frameLayoutlayout,fragmentazul,fragmentmenu.TAG).commit();
+        transaction.add(R.id.frameLayoutmenu,fragmentazul,fragmentmenu.TAG).commit();
     }
 }

@@ -3,14 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/h/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_compras.xml" value="0.1953125" />
         <entry key="..\:/Users/h/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/shapebuton1.xml" value="0.2703125" />
         <entry key="..\:/Users/h/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/Users/h/AndroidStudioProjects/MyApplication/app/src/main/res/layout/asdadasd.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/h/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment1.xml" value="0.25226449275362317" />
         <entry key="..\:/Users/h/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment2menu.xml" value="0.264" />
         <entry key="..\:/Users/h/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment3.xml" value="0.25226449275362317" />
+        <entry key="..\:/Users/h/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment4.xml" value="0.15896739130434784" />
+        <entry key="..\:/Users/h/AndroidStudioProjects/MyApplication/app/src/main/res/layout/item_practica4.xml" value="0.264" />
         <entry key="..\:/Users/h/AndroidStudioProjects/MyApplication/app/src/main/res/layout/practica1intent.xml" value="0.25226449275362317" />
         <entry key="..\:/Users/h/AndroidStudioProjects/MyApplication/app/src/main/res/layout/practica2_fragment.xml" value="0.18614130434782608" />
+        <entry key="..\:/Users/h/AndroidStudioProjects/MyApplication/app/src/main/res/layout/practica4fragment.xml" value="0.15896739130434784" />
+        <entry key="..\:/Users/h/AndroidStudioProjects/MyApplication/app/src/main/res/layout/practica4menu.xml" value="0.15896739130434784" />
+        <entry key="..\:/Users/h/AndroidStudioProjects/MyApplication/app/src/main/res/layout/practica_tres.xml" value="0.15896739130434784" />
         <entry key="..\:/Users/h/AndroidStudioProjects/MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1953125" />
       </map>
     </option>
