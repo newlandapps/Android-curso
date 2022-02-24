@@ -10,4 +10,10 @@
     <color name="red">#FF0000</color>
     <color name="yellow">#FFEB3B</color>
     <color name="alfa">#00FFFFFF</color>
+    <color name="onroad3roadblue">#03A9F4</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <!-- onroad 3 colors -->
+    <color name="onroad3roadblue2">#216C96</color>
+    <color name="onroad3alfa">#00FFFFFF</color>
 </resources>

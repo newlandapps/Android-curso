@@ -35,9 +35,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--practica2-->
+        <!--practica4-->
         <activity android:name=".practica4.view.practica4"
             android:screenOrientation="portrait"/>
+
+        <activity android:name=".practica5.loginView.practica5"
+            android:screenOrientation="portrait"/>
+
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />

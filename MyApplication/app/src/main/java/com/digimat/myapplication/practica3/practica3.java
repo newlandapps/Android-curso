@@ -11,6 +11,7 @@ import com.airbnb.lottie.LottieAnimationView;
 import com.digimat.myapplication.R;
 import com.digimat.myapplication.practica2.practica2fragment;
 import com.digimat.myapplication.practica4.view.practica4;
+import com.digimat.myapplication.practica5.loginView.practica5;
 
 public class practica3  extends AppCompatActivity {
 
@@ -52,7 +53,7 @@ public class practica3  extends AppCompatActivity {
         }
     }
     private void goToLoginContainer() {
-        Intent intent = new Intent(practica3.this, practica4.class);
+        Intent intent = new Intent(practica3.this, practica5.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
         finish();
