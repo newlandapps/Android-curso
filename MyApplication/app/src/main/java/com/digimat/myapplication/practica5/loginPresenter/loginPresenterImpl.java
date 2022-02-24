@@ -26,4 +26,11 @@ public class loginPresenterImpl implements  loginPresenter{
             interactor.requestLogin(user,password);
         }
     }
+
+    @Override
+    public void succes() {
+        if(view!=null) {
+          view.succes();
+        }
+    }
 }

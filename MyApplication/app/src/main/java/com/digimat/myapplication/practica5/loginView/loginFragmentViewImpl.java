@@ -1,5 +1,6 @@
 package com.digimat.myapplication.practica5.loginView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,8 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import com.digimat.myapplication.R;
+import com.digimat.myapplication.practica3.practica3;
+import com.digimat.myapplication.practica4.view.practica4;
 import com.digimat.myapplication.practica5.loginPresenter.loginPresenter;
 import com.digimat.myapplication.practica5.loginPresenter.loginPresenterImpl;
 
@@ -41,7 +44,13 @@ public class loginFragmentViewImpl extends Fragment implements loginFragmentView
 
         presenter = new loginPresenterImpl(this,getContext());
     }
+    @Override
+    public void succes() {
+        Intent intent = new Intent(getActivity(), practica4.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
 
+    }
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -51,4 +60,6 @@ public class loginFragmentViewImpl extends Fragment implements loginFragmentView
                 break;
         }
     }
+
+
 }

@@ -2,6 +2,7 @@ package com.digimat.myapplication.practica5.loginInteractor;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.widget.Toast;
 
 import com.digimat.myapplication.Retrofit.General_constants;
@@ -44,7 +45,10 @@ public class loginInteractorImpl implements  loginInteractor {
 
     private void resquesLoginData(String user, String password) {
         loginRequest request = new loginRequest(user, password);
-        services.getlogin(request).enqueue(new Callback<loginResponse>() {
+
+        Call<loginResponse> call = services.getlogin(request);
+
+        call.enqueue(new Callback<loginResponse>() {
             @Override
             public void onResponse(Call<loginResponse> call, Response<loginResponse> response) {
             if(response.code()==200)
@@ -75,15 +79,17 @@ public class loginInteractorImpl implements  loginInteractor {
                     String urlImage=userData.getUserImage();
 
                     Toast.makeText(context, ""+userName+"   "+email, Toast.LENGTH_SHORT).show();
-//                    SharedPreferences preferences = context.getSharedPreferences("credentials", Context.MODE_PRIVATE);
-//                    SharedPreferences.Editor editor = preferences.edit();
+
+                    SharedPreferences preferences = context.getSharedPreferences(General_constants.CREDENTIALS_PREFERENCES, Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = preferences.edit();
 //                    editor.putString("userName", userName);  //lo devuelve el web service
 //                    editor.putString("user", user);  //ingresado por usuario
 //                    editor.putString("urlImage", urlImage);
-//                    editor.putString("token", token);
+                    editor.putString(General_constants.TOKEN, token);
 //                    editor.putString("password", password);
-//                    editor.putString("email", email);
-//                    editor.commit();
+                    editor.putString(General_constants.EMAIL, email);
+                    editor.commit();
+                    presenter.succes();
                 }
             }
 

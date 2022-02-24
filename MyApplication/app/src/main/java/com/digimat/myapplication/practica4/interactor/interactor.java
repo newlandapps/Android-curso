@@ -35,8 +35,11 @@ public class interactor implements interactorInterface{
 
     @Override
     public void requestEmpleados() {
+        SharedPreferences preferences = context.getSharedPreferences(General_constants.CREDENTIALS_PREFERENCES, Context.MODE_PRIVATE);
+        String token = preferences.getString(General_constants.TOKEN, null);
+        Log.e("sharedPref",""+token);
 
-            requestEmpleados("a871fb54b08d4894afb2cd5780543d16",true);
+            requestEmpleados(token,true);
 
     }
 
