@@ -38,9 +38,9 @@ public class interactor implements interactorInterface{
         SharedPreferences preferences = context.getSharedPreferences(General_constants.CREDENTIALS_PREFERENCES, Context.MODE_PRIVATE);
         String token = preferences.getString(General_constants.TOKEN, null);
         Log.e("sharedPref",""+token);
-
-            requestEmpleados(token,true);
-
+        if(token!=null) {
+            requestEmpleados(token, true);
+        }
     }
 
     private void requestEmpleados(String token, boolean b) {
