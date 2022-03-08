@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.dynatrace.agent:agent-android:8.231.2.1007@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e267829907829c53eb4267d2dcc4043e/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e267829907829c53eb4267d2dcc4043e/jars/libs/instrumentorAPI-apache.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e267829907829c53eb4267d2dcc4043e/jars/libs/instrumentorAPI-okhttp3.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e267829907829c53eb4267d2dcc4043e/jars/libs/instrumentorAPI.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e267829907829c53eb4267d2dcc4043e/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e267829907829c53eb4267d2dcc4043e/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

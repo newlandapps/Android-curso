@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fba02f3c5f51c5e89e9db8caf4c2f19b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fba02f3c5f51c5e89e9db8caf4c2f19b/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fba02f3c5f51c5e89e9db8caf4c2f19b/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
