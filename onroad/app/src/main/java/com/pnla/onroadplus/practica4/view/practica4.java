@@ -1,4 +1,4 @@
-package com.digimat.myapplication.practica4.view;
+package com.pnla.onroadplus.practica4.view;
 
 import android.os.Bundle;
 
@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.digimat.myapplication.R;
+import com.pnla.onroadplus.R;
 
 public class practica4  extends AppCompatActivity {
     private FragmentManager manager;

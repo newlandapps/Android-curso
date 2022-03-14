@@ -1,4 +1,4 @@
-package com.digimat.myapplication.practica4.view;
+package com.pnla.onroadplus.practica2;
 
 import android.os.Bundle;
 
@@ -7,42 +7,37 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.digimat.myapplication.R;
+import com.pnla.onroadplus.R;
 
-public class practica4  extends AppCompatActivity {
+public class practica2fragment extends AppCompatActivity {
+
     private FragmentManager manager;
     private FragmentTransaction transaction;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.practica4fragment);
+        setContentView(R.layout.practica2_fragment);
 
         irafracgment1();
 
         fragmentmenu();
     }
 
-
-
     private void irafracgment1() {
         manager = getSupportFragmentManager();
         transaction=manager.beginTransaction();
-        practica4ViewImpl fragmentazul=new practica4ViewImpl();
-        transaction.add(R.id.frameLayoutlayout42,fragmentazul, practica4ViewImpl.TAG).commit();
+        fragment fragmentazul=new fragment();
+        transaction.add(R.id.frameLayoutlayout,fragmentazul,fragmentmenu.TAG).commit();
     }
 
 
-    public void fragmentmenu() {
+    private void fragmentmenu() {
         manager = getSupportFragmentManager();
         transaction=manager.beginTransaction();
-        practica4fragmentmenu menu=new practica4fragmentmenu();
-        transaction.add(R.id.frameLayoutmenu41,menu,practica4fragmentmenu.TAG).commit();
-
-        testsuma(2, 2);
-
+        fragmentmenu menu=new fragmentmenu();
+        transaction.add(R.id.frameLayoutmenu,menu,fragmentmenu.TAG).commit();
     }
-    public int testsuma(int  dato1, int dato2) {
-        return dato1+dato2;
-    }
+
+
 }
