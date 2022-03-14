@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,6 +18,7 @@ import com.pnla.onroadplus.practica4.model.Datum;
 import com.pnla.onroadplus.practica4.presenter.presenterpractica4;
 import com.pnla.onroadplus.practica4.presenter.presenterInterface;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class practica4ViewImpl extends Fragment implements practica4View{
@@ -27,6 +29,7 @@ public class practica4ViewImpl extends Fragment implements practica4View{
 
     private adapterEmpleados adapter;
     private RecyclerView rv;
+    private SearchView searchView;
 
     @Nullable
     @Override
@@ -38,8 +41,37 @@ public class practica4ViewImpl extends Fragment implements practica4View{
 
     private void initView(View view) {
         rv=view.findViewById(R.id.rvemployes);
+        searchView=view.findViewById(R.id.searchviewEmpleados);
         presenter= new presenterpractica4(this,getContext());
         presenter.requestEmployes();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                List<Datum> dataEmpleados = filterZones(empleados, newText);//List<datarequesZonas> dataZones
+                if(dataEmpleados!=null) {
+                    adapter.setFilter(dataEmpleados);
+
+                }
+                return false;
+            }});
+    }
+
+    private List<Datum> filterZones(List<Datum> empleados, String newText) {
+        List<Datum> filteredList = new ArrayList<>();
+        newText = newText.toLowerCase();
+        for (Datum employe : empleados) {
+            String empleado = employe.getEmployeeName().toLowerCase();
+            if (empleado.contains(newText)) {
+                filteredList.add(employe);
+            }
+        }
+        return filteredList;
+
 
     }
 

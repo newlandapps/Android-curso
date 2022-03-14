@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.pnla.onroadplus.R;
 import com.pnla.onroadplus.practica4.model.Datum;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class adapterEmpleados extends RecyclerView.Adapter<adapterEmpleados.ViewHolder>{
@@ -40,6 +41,13 @@ public class adapterEmpleados extends RecyclerView.Adapter<adapterEmpleados.View
     public int getItemCount() {
         return data.size();
     }
+
+    public void setFilter(List<Datum> dataEmpleados) {
+        this.data = new ArrayList<>();
+        this.data.addAll(dataEmpleados);
+        notifyDataSetChanged();
+    }
+
     public class ViewHolder extends RecyclerView.ViewHolder {
         public TextView nameRepartidor;
         public ViewHolder(@NonNull View itemView) {
