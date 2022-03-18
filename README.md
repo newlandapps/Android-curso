@@ -56,5 +56,5 @@ https://www.figma.com/file/Qla2AKKE6camO5tAHL9IoJ/Untitled?node-id=0%3A1
 }
 ```
 #### sacar el modelo con el siguiente enlace
-
+https://www.jsonschema2pojo.org/
 
