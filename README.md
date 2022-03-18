@@ -31,6 +31,8 @@ https://www.figma.com/file/Qla2AKKE6camO5tAHL9IoJ/Untitled?node-id=0%3A1
 #### catalog/getEmployees
 #### catalog/getUnit
 #### los parametros del request son los siguientes
+### pueden haceder al api mediante el siguiente enlace
+https://holcimenlinea.com/WS-phoenixApiPROD/swagger-ui.html#/
 ### request
 ```
 {
