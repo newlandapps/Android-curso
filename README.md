@@ -27,15 +27,13 @@ https://www.figma.com/file/Qla2AKKE6camO5tAHL9IoJ/Untitled?node-id=0%3A1
 #### el flujo del splash y el login deben guardar el token en las shared preferences
 #### la llave para el mapa seguira siendo la que se encuentra en el proyecto dentro del repositorio en el manifest
 #### la arquitectura de este modulo debe ser MVP
+### pueden haceder al api mediante el siguiente enlace
+https://holcimenlinea.com/WS-phoenixApiPROD/swagger-ui.html#/
 #### los enpoints a agregar son los siguientes
+![image](https://user-images.githubusercontent.com/98972848/159071157-5c026fba-09e9-43b9-88c7-ed92d0f89432.png)
 #### catalog/getEmployees
 #### catalog/getUnit
 #### los parametros del request son los siguientes
-### pueden haceder al api mediante el siguiente enlace
-https://holcimenlinea.com/WS-phoenixApiPROD/swagger-ui.html#/
-![image](https://user-images.githubusercontent.com/98972848/159071157-5c026fba-09e9-43b9-88c7-ed92d0f89432.png)
-
-
 
 ### request
 ```
