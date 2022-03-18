@@ -33,6 +33,9 @@ https://www.figma.com/file/Qla2AKKE6camO5tAHL9IoJ/Untitled?node-id=0%3A1
 #### los parametros del request son los siguientes
 ### pueden haceder al api mediante el siguiente enlace
 https://holcimenlinea.com/WS-phoenixApiPROD/swagger-ui.html#/
+![image](https://user-images.githubusercontent.com/98972848/159071033-52ec547d-6330-47ca-91e6-47384c7454b4.png)
+![Uploading image.png…]()
+
 ### request
 ```
 {
