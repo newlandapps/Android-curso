@@ -25,11 +25,14 @@ https://www.figma.com/file/zoA4MU9yn1lKssuBAUG1iE/on-road?node-id=2394%3A18535
 #### catalog/getUnit
 #### los parametros del request son los siguientes
 ### request
+```
 {
   "flag_parent": true,
   "token": "44391ebd034e667e213bffeca5887ea2"
 }
+```
 ### response
+```
 {
   "responseCode": 105,
   "message": "Operation success",
@@ -44,6 +47,7 @@ https://www.figma.com/file/zoA4MU9yn1lKssuBAUG1iE/on-road?node-id=2394%3A18535
     }
   ]
 }
+```
 #### sacar el modelo con el siguiente enlace
 https://www.jsonschema2pojo.org/
 ![image](https://user-images.githubusercontent.com/98972848/159066372-93460a82-c296-4c2a-b975-16483f4c434f.png)
