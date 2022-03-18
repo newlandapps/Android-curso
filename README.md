@@ -19,7 +19,7 @@ https://www.figma.com/file/zoA4MU9yn1lKssuBAUG1iE/on-road?node-id=2394%3A18535
 #### estas listas consumiran la lista de vehiculos y empleados respectivamente y contendran un filtro para cada caso
 #### el flujo del splash y el login deben guardar el token en las shared preferences
 #### la llave para el mapa seguira siendo la que se encuentra en el proyecto dentro del repositorio en el manifest
-#### la arquitectura de este modulo deve ser MVP
+#### la arquitectura de este modulo debe ser MVP
 #### los enpoints a agregar son los siguientes
 #### catalog/getEmployees
 #### catalog/getUnit
