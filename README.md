@@ -13,7 +13,10 @@
 https://www.figma.com/file/zoA4MU9yn1lKssuBAUG1iE/on-road?node-id=2394%3A18535
 
 
-#RETO DE EXAMEN
-
+##RETO DE EXAMEN
+#### Dentro del folder de onroad plus crear una carpeta nueva llamada examen
+#### generar un nuevo item en el menu con el mapa que contenga un botton que cambie el fragment del mapa por uno con dos listas
+#### estas listas consumiran la lista de vehiculos y empleados respectivamente y contendran un filtro para cada caso
+#### el flujo del splash y el login deben guardar el token en las shared preferences y la llave para el mapa seguira siendo la que se encuentra en el proyecto dentro del repositorio
 ![image](https://user-images.githubusercontent.com/98972848/159066372-93460a82-c296-4c2a-b975-16483f4c434f.png)
 
