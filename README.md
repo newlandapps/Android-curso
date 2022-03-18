@@ -6,6 +6,7 @@
 ##### Implementar un splash screen de lottie files
 ##### cambiar los iconos del menu por unos propios
 ##### crear un modulo con arquitectura MVP y sus clases con nombres correspondientes
+##### revisar el modulo de google maps que se actualizo en el repositorio
 #
 #Subir los cambios al git en una rama personal al proyecto en github
 #
