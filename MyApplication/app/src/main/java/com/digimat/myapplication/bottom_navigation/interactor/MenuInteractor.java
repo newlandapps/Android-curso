@@ -1,7 +1,7 @@
 package com.digimat.myapplication.bottom_navigation.interactor;
 
 import com.digimat.myapplication.bottom_navigation.callback.MenuServerCallback;
-import com.digimat.myapplication.bottom_navigation.model.MenuOption;
+import com.digimat.myapplication.bottom_navigation.model.NavigationItem;
 import com.digimat.myapplication.bottom_navigation.model.MenuOptionRequest;
 import com.digimat.myapplication.bottom_navigation.model.MenuOptionResponse;
 import com.digimat.myapplication.bottom_navigation.util.MenuApiHelper;
@@ -29,7 +29,7 @@ public class MenuInteractor implements MenuOptionInteractor {
                     //Mandar error
                 }
 
-                List<MenuOption> menuOptionsList = response.body().getData();
+                List<NavigationItem> menuOptionsList = response.body().getData();
 
                 if (menuOptionsList.isEmpty()) {
                     //Mandar error de data vacia.

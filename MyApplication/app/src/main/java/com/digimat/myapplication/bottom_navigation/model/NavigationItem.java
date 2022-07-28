@@ -4,7 +4,7 @@ package com.digimat.myapplication.bottom_navigation.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class MenuOption {
+public class NavigationItem {
 
     @SerializedName("cve_object")
     @Expose
@@ -15,6 +15,12 @@ public class MenuOption {
     @SerializedName("access_flag")
     @Expose
     private Boolean accessFlag;
+
+    public NavigationItem(Integer cveObject, String objName, Boolean accessFlag) {
+        this.cveObject = cveObject;
+        this.objName = objName;
+        this.accessFlag = accessFlag;
+    }
 
     public Integer getCveObject() {
         return cveObject;

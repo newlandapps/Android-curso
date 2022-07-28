@@ -14,7 +14,7 @@ public class MenuOptionResponse {
     private String message;
     @SerializedName("data")
     @Expose
-    private List<MenuOption> data = null;
+    private List<NavigationItem> data = null;
 
     public Integer getResponseCode() {
         return responseCode;
@@ -32,11 +32,11 @@ public class MenuOptionResponse {
         this.message = message;
     }
 
-    public List<MenuOption> getData() {
+    public List<NavigationItem> getData() {
         return data;
     }
 
-    public void setData(List<MenuOption> data) {
+    public void setData(List<NavigationItem> data) {
         this.data = data;
     }
 }

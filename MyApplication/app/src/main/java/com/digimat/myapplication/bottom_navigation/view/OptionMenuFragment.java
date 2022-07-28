@@ -3,12 +3,20 @@ package com.digimat.myapplication.bottom_navigation.view;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.digimat.myapplication.R;
+import com.digimat.myapplication.bottom_navigation.adapter.NavigationBottomAdapter;
+import com.digimat.myapplication.bottom_navigation.model.NavigationItem;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,6 +33,11 @@ public class OptionMenuFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private View view;
+
+    private RecyclerView recyclerViewNav, recyclerView;
+    private NavigationBottomAdapter mAdapter;
 
     public OptionMenuFragment() {
         // Required empty public constructor
@@ -61,6 +74,36 @@ public class OptionMenuFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_menu_options, container, false);
+        View view = inflater.inflate(R.layout.fragment_navigation_recyclerview, container, false);
+        //Dummy data
+        List<NavigationItem> navigationItem = new ArrayList<>();
+        navigationItem.add(new NavigationItem(1145, "Perfil", true));
+        navigationItem.add(new NavigationItem(1146, "Rastreo", true));
+        navigationItem.add(new NavigationItem(1147, "Unidades", true));
+        navigationItem.add(new NavigationItem(1148, "Notificaciones", true));
+        navigationItem.add(new NavigationItem(1149, "Geozonas", true));
+        navigationItem.add(new NavigationItem(1150, "Contacto", true));
+        navigationItem.add(new NavigationItem(2107, "Checklist", true));
+
+
+        recyclerViewNav = view.findViewById(R.id.menuappbar_icon_visible);
+        RecyclerView recyclerView = view.findViewById(R.id.menuappbar_icon_invisible);
+
+        mAdapter = new NavigationBottomAdapter(view.getContext(), navigationItem);
+        recyclerViewNav.setAdapter(mAdapter);
+        recyclerView.setAdapter(mAdapter);
+
+
+        //decorator
+        RecyclerView.ItemDecoration decoration = new DividerItemDecoration(view.getContext(), DividerItemDecoration.VERTICAL);
+
+        recyclerView.addItemDecoration(decoration);
+        recyclerViewNav.addItemDecoration(decoration);
+
+        recyclerViewNav.setLayoutManager(new LinearLayoutManager(view.getContext()));
+        recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
+        // Inflate the layout for this fragment
+        //return inflater.inflate(R.layout.fragment_menu_options, container, false);
+        return view;
     }
 }

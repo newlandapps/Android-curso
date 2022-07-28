@@ -3,21 +3,21 @@
     <item
         android:id="@+id/fragment_profile"
         android:enabled="true"
-        android:icon="@drawable/ic_menu_profile"
+        android:icon="@drawable/ic_navigation_perfil"
         android:title="Profile" />
     <item
         android:id="@+id/fragment_journey"
         android:enabled="true"
-        android:icon="@drawable/ic_menu_journey"
+        android:icon="@drawable/ic_navigation_geozonas"
         android:title="journey" />
     <item
         android:id="@+id/fragment_checklist"
         android:enabled="true"
-        android:icon="@drawable/ic_menu_checklist"
+        android:icon="@drawable/ic_navigation_checklist"
         android:title="checklist" />
     <item
         android:id="@+id/ic_menu_threedots"
         android:enabled="true"
-        android:icon="@drawable/ic_menu_three_dots"
+        android:icon="@drawable/ic_navigation_threedots"
         android:title="menu_onroad" />
 </menu>

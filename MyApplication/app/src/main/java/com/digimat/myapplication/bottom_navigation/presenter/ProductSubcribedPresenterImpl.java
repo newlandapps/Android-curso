@@ -5,7 +5,7 @@ import android.util.Log;
 
 import com.digimat.myapplication.bottom_navigation.callback.MenuServerCallback;
 import com.digimat.myapplication.bottom_navigation.interactor.MenuInteractor;
-import com.digimat.myapplication.bottom_navigation.model.MenuOption;
+import com.digimat.myapplication.bottom_navigation.model.NavigationItem;
 import com.digimat.myapplication.bottom_navigation.view.BottomNavigationActivity;
 
 import java.util.List;
@@ -25,11 +25,12 @@ public class ProductSubcribedPresenterImpl {
     public void onListener() {
         interactor.getAllOnRoadMenu("token", new MenuServerCallback() {
             @Override
-            public void getAllMenuOptionsServer(List<MenuOption> menuOptionsList) {
+            public void getAllMenuOptionsServer(List<NavigationItem> menuOptionsList) {
                 menuOptionsList.forEach(menu -> {
                     Log.d("option", menu.getObjName());
                 });
-                //viewRecyclerView.displayMenu();
+
+                view.setupData(menuOptionsList);
             }
 
             @Override
