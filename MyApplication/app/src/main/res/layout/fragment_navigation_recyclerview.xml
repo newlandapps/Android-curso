@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/textView5"
@@ -22,7 +23,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/menuappbar_icon_visible"
         android:layout_width="match_parent"
-        android:layout_height="320sp"
+        android:layout_height="330sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -31,26 +32,24 @@
         android:id="@+id/textView9"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20sp"
         android:paddingLeft="15sp"
         android:text="Iconos "
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menuappbar_icon_visible" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/menuappbar_icon_invisible"
         android:layout_width="match_parent"
-        android:layout_height="250sp"
+        android:layout_height="330sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -67,6 +66,7 @@
 
     <ImageView
         android:id="@+id/imageView3"
+        android:foregroundGravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

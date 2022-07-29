@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -23,7 +24,6 @@ public class NavigationBottomViewHolder extends RecyclerView.ViewHolder {
     private ImageView imgvw_navigation_img;
     final NavigationBottomAdapter mAdapter;
     private Context context;
-
     private Resources resources;
 
 
@@ -31,7 +31,6 @@ public class NavigationBottomViewHolder extends RecyclerView.ViewHolder {
         super(itemView);
         //setupItemView(itemView);
         context = itemView.getContext();
-        resources = itemView.getResources();
 
         txtvw = itemView.findViewById(R.id.text);
         imgvw_navigation_img = itemView.findViewById(R.id.imgvw_navigation_img);
@@ -47,18 +46,28 @@ public class NavigationBottomViewHolder extends RecyclerView.ViewHolder {
     }
 
 
-    @SuppressLint("ResourceAsColor")
     public void render(NavigationItem menuItem) {
+        resources = itemView.getResources();
         String objName = menuItem.getObjName();
         txtvw.setText(objName);
 
-        Drawable drawable = resources.getDrawable(R.drawable.ic_navigation_perfil, resources.newTheme());
 
-        imgvw_navigation_img.setImageDrawable(drawable);
+        String imageName = mAdapter.searchIcon(objName);
+
+        if (imageName != null) {
+            Log.d("image", "render: " + imageName);
+            int drawableResourceId = resources.getIdentifier(imageName, "drawable", context.getPackageName());
+
+            if (drawableResourceId != 0) {
+                Log.d("TAG: ", "render: " + drawableResourceId);
+                imgvw_navigation_img.setImageResource(drawableResourceId);
+            }
+            resources = null;
+        }
 
     }
 
-    public Drawable searchNavigationItem(String objName) {
+    /*public Drawable searchNavigationItem(String objName) {
         String res_name = "ic_navigation_" + objName.toLowerCase();
 
 
@@ -71,5 +80,5 @@ public class NavigationBottomViewHolder extends RecyclerView.ViewHolder {
             return icon;
         }
         return null;
-    }
+    }*/
 }
